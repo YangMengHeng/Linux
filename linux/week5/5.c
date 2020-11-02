@@ -1,8 +1,12 @@
-#include"t.h"
-
+#include <stdio.h>
 int main(void)
 {
-
-
-    reuturn 0;
+    char str[30];
+    char ch;
+    printf("请输入字符串：");
+    gets(str);
+    printf("%s\n", str);
+    scanf("%c", &ch);
+    printf("ch = %c\n", ch);
+    return 0;
 }

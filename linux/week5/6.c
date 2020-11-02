@@ -6,7 +6,7 @@ int main(void)
     int i = 0;
     long tli = 0;
 
-    printf("%d %d\n", sizeof(long int), sizeof(long long int));
+    printf("%d %d\n", sizeof(int), sizeof(long long int));
     printf("max int value: %d\n", (unsigned int)~i >> 1);
     printf("min int value: %d\n", ++i << (sizeof(int) * 8 - 1));
     printf("max long int value: %ld\n", (unsigned long int)~tli >> 1);

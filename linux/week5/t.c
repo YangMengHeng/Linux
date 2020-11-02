@@ -67,7 +67,7 @@ int outputDataFromFile(char *path, int n)
     return re;
 }
 
-int saveDataFromFile(char *path, int n)
+int saveDataToFile(char *path, int n)
 {
     int num = sizeof(user), re = 0;
     FILE *fp = NULL;

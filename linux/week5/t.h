@@ -7,6 +7,7 @@
 #include<sys/types.h>
 #include<sys/stat.h>
 #include<string.h>
+#include<float.h>
 
 #define INCREASMENT 0
 #define DECREASMENT 1
@@ -18,11 +19,11 @@ typedef struct USER{
     char tel[12];
 }user;
 
-int inputDataFromFile(char *path, int n);
-int outputDataFromFile(char *path, int n);
 void errExit(char *s);
-int saveDataFromFile(char *path, int n);
 void updateOrderWay();
-void sortDataByqsort(user usr[], int num, int n);
 int cmp(const void *a, const void *b);
 int recmp(const void *a, const void *b);
+void sortDataByqsort(user usr[], int num, int n);
+int inputDataFromFile(char *path, int n);
+int outputDataFromFile(char *path, int n);
+int saveDataToFile(char *path, int n);
